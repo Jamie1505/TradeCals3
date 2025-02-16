@@ -1,0 +1,4 @@
+1. Like button not working as it should 
+2. Bookmarks not working correctly 
+3. replied not working correctly
+4. Bookmarks dissapearing when you select bookmarks

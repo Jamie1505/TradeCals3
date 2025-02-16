@@ -1,0 +1,73 @@
+I want the post app to be light weight and simple so having the data only
+saved and read from a database will work.
+
+Step 1: Identify the Data Entities
+1.  Question ID: number 
+2.  Question created By: username
+3.  Category: Selected Category
+4.  CreatedAt: Time Stamp
+5.  Profile Image:URL
+6.  Question Text: String
+7.  Replies: number 
+8.  Bookmarks: number
+9.  Likes: number
+10. Dislikes: number
+11. UserAction: liked, Disliked, replied, bookmarked 
+
+Have firestore create the QuestionID
+
+
+Defined Data Structure
+
+"questions": {
+  "ID": {
+    "username": Jamie1505
+    "createdBy": "username123",
+    "category": "Technology",
+    "createdAt": "2024-12-02T12:00:00Z",
+    "profileImage": "https://example.com/user123.jpg",
+    "questionText": "What is Firebase?",
+    "replies": 3,
+    "bookmarks": 10,
+    "likes": 25,
+    "dislikes": 2,
+  }
+}
+"userActions": {
+  "questionId1": {
+    "username123": {
+      "liked": true,
+      "disliked": false,
+      "replied": false,
+      "bookmarked": true
+    }
+  }
+}
+like = (true) => dislike = (false)
+like = (false) => dislike = (true)
+dislike = (true) => like = (false)
+dislike = (false) => like = (true)
+reply = (false)
+reply = (true)
+bookmark = (false)
+bookmark = (true)
+
+Cache the Username:
+const [username, setUsername] = useState(null);
+
+useEffect(() => {
+  fetchUsername().then(setUsername).catch(console.error);
+}, [fetchUsername]);
+
+Have handle submit make all the collections otherwise they will be made every time a reply is sent 
+
+      const newReply: Reply = {
+        id: replyRef.id,
+        text: replyText,
+        username,
+        createdAt: serverTimestamp(),
+      };
+Maybe have the user actions added to storage first to update the ui faster then upload the data to the store 
+this should fix the laggy ui but adds extra complexity 
+
+Handle Submit => Form Data 

@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "Trade Cals",
+    "slug": "tradecalsv1",
+    "version": "1.0.1",
+    "orientation": "default",
+    "userInterfaceStyle": "dark",
+    "jsEngine": "hermes",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/Splash.png",
+      "backgroundColor": "#000000",
+      "resizeMode": "contain"
+    },
+    "updates": {
+      "enabled": true,
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/4966969d-4b63-4e51-bdbf-17935842dddf"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "4966969d-4b63-4e51-bdbf-17935842dddf"
+      }
+    },
+    "owner": "jamie1506",
+    "plugins": [
+      [
+        "expo-secure-store",
+        {
+          "faceIDPermission": "Allow $(PRODUCT_NAME) to access your Face ID biometric data."
+        }
+      ],
+      "expo-font",
+      "expo-asset",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app needs access to your photos to let you share them on your profile.",
+          "cameraPermission": "The app needs access to your camera to let you take profile photos."
+        }
+      ]
+    ],
+    "runtimeVersion": "1.0.0",
+    "android": {
+      "package": "com.jamie1505.tradecalsv1",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "icon": "./assets/images/AndroidIcon.png"
+    },
+    "ios": {}
+  }
+}

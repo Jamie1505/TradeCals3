@@ -1,0 +1,9 @@
+{
+    "cSpell.enabledFileTypes": {
+        "typescriptreact": false
+    },
+    "editor.tokenColorCustomizations": {
+        "comments": "",
+        "textMateRules": []
+    }
+}
