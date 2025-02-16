@@ -1,4 +1,4 @@
-package com.jamie1505.TradeCalsV1
+package com.jamie1505.tradecalsv1
 
 import android.app.Application
 import android.content.res.Configuration

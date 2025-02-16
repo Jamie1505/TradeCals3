@@ -4,6 +4,13 @@
     "appVersionSource": "remote",
     "requireCommit": false
   },
+  "expo": {
+  "doctor": {
+    "reactNativeDirectoryCheck": {
+      "listUnknownPackages": false
+    }
+  }
+}
   "build": {
     "development": {
       "developmentClient": true,

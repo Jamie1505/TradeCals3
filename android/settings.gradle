@@ -21,7 +21,7 @@ extensions.configure(com.facebook.react.ReactSettingsExtension) { ex ->
   }
 }
 
-rootProject.name = 'TradeCalsV1'
+rootProject.name = 'Trade Cals'
 
 dependencyResolutionManagement {
   versionCatalogs {
